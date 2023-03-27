@@ -1,0 +1,104 @@
+<div class="right" xmlns:n="native" id="userProfileDiv" apply="${userProfileControl}">
+	<n:h1>Profile</n:h1>
+    <div class="top">
+        <div class="theme-toggler">
+            <n:span class="material-icons-sharp active">light_mode</n:span>
+            <n:span class="material-icons-sharp">dark_mode</n:span>
+        </div>
+        <n:a href="#" onClick="userProfileClick();">
+	        <div class="profile">
+	            <div class="info">
+	                <n:p>Hey, <n:b>Daniel</n:b></n:p>
+	                <n:small class="text-muted">User</n:small>
+	            </div>
+	            <div class="profile-photo">
+	                <n:img src="/zkau/web/img/profile-1.jpg"></n:img>
+	            </div>
+	        </div>        
+        </n:a>
+        <n:button id="menu-btn">
+            <n:span class="material-icons-sharp">menu</n:span>
+        </n:button>        
+    </div>
+     <div class="recent-updates">
+         <n:h2>Recent Updates</n:h2>
+         <div class="updates">
+             <div class="update">
+                 <div class="profile-photo">
+                     <n:img src="/zkau/web/img/profile-2.jpg"></n:img>
+                 </div>
+                 <div class="message">
+                     <n:p><n:b>Mike Tyson</n:b> received his order of Night lion tech GPS drone.</n:p>
+                     <n:small class="text-muted">2 Minutes Ago</n:small>
+                 </div>
+             </div>
+             <div class="update">
+                 <div class="profile-photo">
+                     <n:img src="/zkau/web/img/profile-3.jpg"></n:img>
+                 </div>
+                 <div class="message">
+                     <n:p><n:b>Mike Tyson</n:b> received his order of Night lion tech GPS drone.</n:p>
+                     <n:small class="text-muted">2 Minutes Ago</n:small>
+                 </div>
+             </div>
+             <div class="update">
+                 <div class="profile-photo">
+                     <n:img src="/zkau/web/img/profile-4.jpg"></n:img>
+                 </div>
+                 <div class="message">
+                     <n:p><n:b>Mike Tyson</n:b> received his order of Night lion tech GPS drone.</n:p>
+                     <n:small class="text-muted">2 Minutes Ago</n:small>
+                 </div>
+             </div>
+         </div>
+     </div>
+     <div class="sales-analytics">
+         <n:h2>Sales Analytics</n:h2>
+         <div class="item online">
+             <div class="icon">
+                 <n:span class="material-icons-sharp">shopping_cart</n:span>
+             </div>
+             <div class="right">
+                 <div class="info">
+                     <n:h3>ONLINE ORDERS</n:h3>
+                     <n:small class="text-muted">Last 24 Hours</n:small>
+                 </div>
+                 <n:h5 class="success">+39%</n:h5>
+                 <n:h3>3849</n:h3>
+             </div>
+         </div>
+         <div class="item offline">
+             <div class="icon">
+                 <n:span class="material-icons-sharp">local_mall</n:span>
+             </div>
+             <div class="right">
+                 <div class="info">
+                     <n:h3>OFFLINE ORDERS</n:h3>
+                     <n:small class="text-muted">Last 24 Hours</n:small>
+                 </div>
+                 <n:h5 class="danger">-17%</n:h5>
+                 <n:h3>1100</n:h3>
+             </div>
+         </div>
+         <div class="item customers">
+             <div class="icon">
+                 <n:span class="material-icons-sharp">person</n:span>
+             </div>
+             <div class="right">
+                 <div class="info">
+                     <n:h3>NEW CUSTOMERS</n:h3>
+                     <n:small class="text-muted">Last 24 Hours</n:small>
+                 </div>
+                 <n:h5 class="success">+25%</n:h5>
+                 <n:h3>849</n:h3>
+             </div>
+         </div>
+         <div class="item add-product">
+             <div>
+                 <n:span class="material-icons-sharp">add</n:span>
+                 <n:h3>Add Product</n:h3>
+             </div>
+         </div>
+     </div>     
+</div>
+

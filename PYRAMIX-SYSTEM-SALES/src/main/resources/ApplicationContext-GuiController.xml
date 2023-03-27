@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<import resource="CommonContext-Dao.xml"/>
+
+	<bean id="basisController" class="com.pyramix.sales.common.GFCBaseController" abstract="true" scope="prototype">
+	
+	</bean>	
+
+	<bean id="loginEvalControl" class="com.pyramix.sales.security.LoginEvalControl" scope="prototype">
+	
+	</bean>
+	
+	<bean id="main02Controller" class="com.pyramix.sales.main.Main02Control" scope="prototype" parent="basisController">
+	
+	</bean>
+	
+	<bean id="dashboardMainControl" class="com.pyramix.sales.dashboard.DashboardMainControl" scope="prototype" parent="basisController">
+	
+	</bean>
+	
+	<bean id="userProfileControl" class="com.pyramix.sales.user.UserProfileControl" scope="prototype" parent="basisController">
+	
+	</bean>
+	
+	<bean id="customerListInfoControl" class="com.pyramix.sales.customer.CustomerListInfoControl" scope="prototype" parent="basisController">
+	
+	</bean>
+
+	<bean id="ordersListInfoControl" class="com.pyramix.sales.orders.OrdersListInfoControl" scope="prototype" parent="basisController">
+	
+	</bean>
+</beans>

@@ -1,0 +1,5 @@
+<div xmlns:n="native" id="customerListInfoDiv" apply="${customerListInfoControl}">
+	<n:main>
+		<n:h1>Customer</n:h1>	
+	</n:main>
+</div>

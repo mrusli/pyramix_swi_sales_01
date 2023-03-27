@@ -1,0 +1,70 @@
+<?page title="Main02" contentType="text/html;charset=UTF-8"?>
+<?variable-resolver class="org.zkoss.zkplus.spring.DelegatingVariableResolver"?>
+<?link rel="stylesheet" type="text/css" href="/zkau/web/css/style-main02.css"?>
+<?link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"?>
+<zk>
+<window xmlns:n="native" id="main02Win" border="none" sclass="mainWindow" apply="${main02Controller}">
+	<div class="container">
+		<n:aside>
+			<div class="top">
+				<div class="logo">
+					<n:img src="/zkau/web/img/logo.png" alt=""></n:img>
+					<n:h2>PYRA<n:span class="danger">MIX</n:span></n:h2>
+				</div>
+                <div class="close" id="close-btn">
+                    <n:span class="material-icons-sharp">close</n:span>
+                </div>				
+			</div>
+			<!-- ========================start: sidebar======================== -->
+			<div class="sidebar">
+                <n:a href="#" class="smenu active" onClick="dashboardMenuClick();">
+                    <n:span class="material-icons-sharp">grid_view</n:span>
+                    <n:h3>Dashboard</n:h3>
+                </n:a>
+                <n:a href="#" class="smenu" onClick="customerMenuClick();">
+                    <n:span class="material-icons-sharp">person</n:span>
+                    <n:h3>Customers</n:h3>
+                </n:a>
+                <n:a href="#" class="smenu" onClick="ordersMenuClick();">
+                    <n:span class="material-icons-sharp">receipt_long</n:span>
+                    <n:h3>Orders</n:h3>
+                </n:a>
+                <n:a href="#" class="smenu">
+                    <n:span class="material-icons-sharp">insights</n:span>
+                    <n:h3>Analytics</n:h3>
+                </n:a>
+                <n:a href="#" class="smenu">
+                    <n:span class="material-icons-sharp">mail_outline</n:span>
+                    <n:h3>Messages</n:h3>
+                    <n:span class="message-count">26</n:span>
+                </n:a>
+                <n:a href="#" class="smenu">
+                    <n:span class="material-icons-sharp">inventory</n:span>
+                    <n:h3>Products</n:h3>
+                </n:a>
+                <n:a href="#" class="smenu">
+                    <n:span class="material-icons-sharp">report</n:span>
+                    <n:h3>Reports</n:h3>
+                </n:a>
+                <n:a href="#" class="smenu">
+                    <n:span class="material-icons-sharp">settings</n:span>
+                    <n:h3>Settings</n:h3>
+                </n:a>
+                <n:a href="#" class="smenu">
+                    <n:span class="material-icons-sharp">add</n:span>
+                    <n:h3>AddProduct</n:h3>
+                </n:a>
+                <n:a href="/logout" class="smenu">
+                    <n:span class="material-icons-sharp">logout</n:span>
+                    <n:h3>Logout</n:h3>
+                </n:a>            				
+			</div>
+		</n:aside>
+		<!-- ========================start: main======================== -->
+		<include id="main02Include" hflex="1" vflex="1" style="overflow: auto;"></include>
+		<!-- ========================start: user-profile======================== -->
+		<include id="main02Profile" hflex="1" vflex="1" style="overflow: auto;"></include>
+	</div>
+</window>
+<script defer="true" type="text/javascript" src="/zkau/web/js/main02.js"></script>
+</zk>

@@ -1,0 +1,5 @@
+<div xmlns:n="native" id="userProfileDiv" apply="${userProfileControl}">
+	<n:main>
+		<n:h1>User's Profile</n:h1>	
+	</n:main>
+</div>

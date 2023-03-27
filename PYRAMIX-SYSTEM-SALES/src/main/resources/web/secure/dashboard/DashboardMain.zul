@@ -1,0 +1,81 @@
+<div xmlns:n="native" id="dashboardMainPanel" apply="${dashboardMainControl}">
+	<n:main>
+		<n:h1>Dashboard</n:h1>
+		<div class="insights">           
+			<div class="sales">
+                <n:span class="material-icons-sharp">analytics</n:span>
+                <div class="middle">
+                    <div class="left">
+                        <n:h3>Total Sales</n:h3>
+                        <n:h1>$25,024</n:h1>
+                    </div>
+                    <div class="progress">
+                        <n:svg>
+                            <n:circle cx='38' cy='38' r='36'></n:circle>
+                        </n:svg>
+                        <div class="number">
+                            <n:p>81%</n:p>
+                        </div>
+                    </div>
+                </div>
+                <n:small class="text-muted">Last 24 Hours</n:small>
+			</div>
+            <div class="expenses">
+                <n:span class="material-icons-sharp">bar_chart</n:span>
+                <div class="middle">
+                    <div class="left">
+                        <n:h3>Total Expenses</n:h3>
+                        <n:h1>$14,160</n:h1>
+                    </div>
+                    <div class="progress">
+                        <n:svg>
+                            <n:circle cx='38' cy='38' r='36'></n:circle>
+                        </n:svg>
+                        <div class="number">
+                            <n:p>62%</n:p>
+                        </div>
+                    </div>
+                </div>
+                <n:small class="text-muted">Last 24 Hours</n:small>
+            </div>	
+            <div class="income">
+                <n:span class="material-icons-sharp">stacked_line_chart</n:span>
+                <div class="middle">
+                    <div class="left">
+                        <n:h3>Total Sales</n:h3>
+                        <n:h1>$10,864</n:h1>
+                    </div>
+                    <div class="progress">
+                        <n:svg>
+                            <n:circle cx='38' cy='38' r='36'></n:circle>
+                        </n:svg>
+                        <div class="number">
+                            <n:p>44%</n:p>
+                        </div>
+                    </div>
+                </div>
+                <n:small class="text-muted">Last 24 Hours</n:small>
+            </div>					
+		</div>
+        <div class="recent-orders">
+            <n:h2>Recent Orders</n:h2>
+            <n:table>
+                <n:thead>
+                    <n:tr>
+                        <n:th>Product Name</n:th>
+                        <n:th>Product Number</n:th>
+                        <n:th>Payment</n:th>
+                        <n:th>Status</n:th>
+                        <n:th></n:th>
+                    </n:tr>
+                </n:thead>
+                <n:tbody>
+
+                </n:tbody>
+            </n:table>
+            <n:a href="#">Show All</n:a>
+        </div>		
+	</n:main>
+	<script type="text/javascript" src="/zkau/web/js/orders.js"></script>	
+	<script defer="true" type="text/javascript" src="/zkau/web/js/orders-fill.js"></script>
+</div>

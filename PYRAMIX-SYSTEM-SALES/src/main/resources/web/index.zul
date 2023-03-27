@@ -1,0 +1,36 @@
+<?page title="Index" contentType="text/html;charset=UTF-8"?>
+<?link rel="stylesheet" type="text/css" href="/zkau/web/css/bootstrap-spacelab.min.css"?>
+<?link rel="stylesheet" type="text/css" href="/zkau/web/css/style-zk.css"?>
+<zk>
+<window border="none" sclass="mainWindow">
+	<grid sclass="mainGrid">
+		<rows>
+			<row>
+				<cell width="10%">
+					ZK Version:		
+				</cell>
+				<cell>
+					<label value="${session.webApp.version}"></label>
+				</cell>
+			</row>
+			<row>
+				<cell>
+					AppName:
+				</cell>
+				<cell>
+					<label value="${session.webApp.appName}"></label>
+				</cell>
+			</row>
+			<row>
+				<cell>
+					Build:
+				</cell>
+				<cell>
+					<label value="${session.webApp.build}"></label>
+				</cell>
+			</row>
+		</rows>
+	</grid>
+	<button id="loginButton" label="Login" href="/login"></button>
+</window>
+</zk>
