@@ -6,7 +6,6 @@ import org.apache.log4j.Logger;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
@@ -40,7 +39,7 @@ public class LoginController {
 	 * @param request
 	 * @return {@link String}
 	 */
-	@RequestMapping("/success")
+	@GetMapping("/success")
 	public String landing(HttpServletRequest request) {
 		// UsernamePasswordAuthenticationToken [Principal=com.pyramix.sales.security.UserSecurityDetails@660b0b6e, 
 		// 	Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=2412FE524E940EAB7AF5D614DC9D9559], 

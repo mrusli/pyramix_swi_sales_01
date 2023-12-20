@@ -54,7 +54,7 @@
                     <n:span class="material-icons-sharp">add</n:span>
                     <n:h3>AddProduct</n:h3>
                 </n:a>
-                <n:a href="/logout" class="smenu">
+                <n:a href="/logout" class="smenu" onClick="logoutClick();">
                     <n:span class="material-icons-sharp">logout</n:span>
                     <n:h3>Logout</n:h3>
                 </n:a>            				

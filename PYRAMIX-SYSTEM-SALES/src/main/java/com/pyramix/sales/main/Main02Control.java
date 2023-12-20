@@ -1,6 +1,7 @@
 package com.pyramix.sales.main;
 
 import org.apache.log4j.Logger;
+import org.zkoss.zk.ui.Executions;
 import org.zkoss.zk.ui.event.Event;
 import org.zkoss.zul.Include;
 
@@ -46,5 +47,11 @@ public class Main02Control extends GFCBaseController {
 		log.info("onClickUserProfile..."+event.getData().toString());
 		
 		main02Include.setSrc("~./secure/user/UserProfile.zul");		
+	}
+	
+	public void onClickLogout(Event event) {
+		log.info("onClickLogout..."+event.getData().toString());
+		
+		Executions.sendRedirect("/logout");
 	}
 }

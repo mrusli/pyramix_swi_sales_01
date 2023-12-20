@@ -33,3 +33,7 @@ function ordersMenuClick() {
 function userProfileClick() {
 	zAu.send(new zk.Event(zk.Widget.$(this), 'onClickUserProfile', 'UserProfile...'));
 }
+
+function logoutClick() {
+	zAu.send(new zk.Event(zk.Widget.$(this), 'onClickLogout', 'Logout...'));
+}
